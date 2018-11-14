@@ -1,6 +1,7 @@
 package choice.controller;
 
-import java.swing.JOptionPane;
+import javax.swing.JOptionPane;
+import choice.model.MovieModel;
 import java.util.Scanner;
 import java.util.ArrayList;
 
