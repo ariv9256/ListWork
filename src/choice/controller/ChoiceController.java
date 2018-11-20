@@ -8,13 +8,23 @@ import javax.swing.ImageIcon;
 
 public class ChoiceController
 {
+	private MovieModel[] movieArray;
+	private ImageIcon[] icons;
 	private Scanner inputScanner;
 	private MovieModel movie;
 	
 	public ChoiceController()
 	{
+		myMovie = 
 		movie = new MovieModel();
 		inputScanner = new Scanner(System.in);
+	}
+	
+	public void start()
+	{
+		
+		arrayInitialization();
+		movieList();
 	}
 	private void arrayInitialization()
 	{
@@ -35,13 +45,6 @@ public class ChoiceController
 				movieArray[index] = new MovieModel(index * 30);
 			}
 		}
-	}
-	
-	public void start()
-	{
-		
-		arrayInitialization();
-		movieList();
 	}
 	private void movieList()
 	{
